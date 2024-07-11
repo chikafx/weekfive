@@ -1,0 +1,27 @@
+{
+  "name": "weekfive",
+  "version": "1.0.0",
+  "description": "introduction to tailwind",
+  "main": "index.js",
+  "scripts": {
+    "test": "git repository",
+    "chikafx":"tailwindcss -i ./chikafx.css -o ./chika/obi.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chikafx/weekfive.git"
+  },
+  "keywords": [
+    "html",
+    "css"
+  ],
+  "author": "chikafx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chikafx/weekfive/issues"
+  },
+  "homepage": "https://github.com/chikafx/weekfive#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  }
+}
