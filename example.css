@@ -1,0 +1,43 @@
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 100px);
+    grid-template-areas: 
+    "a a b b"
+    "a a b b"
+    "a a b b"
+    "c c d d"
+    "e e d d"
+    "e e d d"
+    "e e d d"
+    "f f f f";
+    gap: 15px;
+}
+
+section{
+    background-color: purple;
+}
+
+main>section:nth-child(1){
+    grid-area: a;
+}
+
+main>section:nth-child(2){
+    grid-area: b;
+}
+
+main>section:nth-child(3){
+    grid-area: c;
+}
+
+main>section:nth-child(4){
+    grid-area: d;
+}
+
+main>section:nth-child(5){
+    grid-area: e;
+}
+
+main>section:nth-child(6){
+   grid-area: f;
+}
