@@ -1,0 +1,110 @@
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 150px);
+    grid-template-areas:
+    "a a a"
+    "b c d"
+    "e f d"
+    "e h d"
+    "g h i";
+    gap: 10px;
+
+    background-color: black;
+}
+
+section:nth-of-type(1) {
+    grid-area: a;
+    text-align: center;
+    font-weight: 200;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font: larger;
+    color: rgb(23, 24, 23);
+    background-color: cornsilk;
+    border-radius: 60px;
+}
+
+section:nth-of-type(2) {
+    grid-area: d;
+    background-image: url(./giftcard.jpeg);
+    background-repeat: no-repeat;
+    border-radius: 70px 70px;
+    color: chartreuse ;
+    width: 400px;
+    height: 350px;
+}
+
+section{
+    background-color: fuchsia;
+}
+
+section:nth-of-type(3){
+    grid-area: h;
+    background-image: url(./zelle\ pix.jpeg);
+    border-radius: 50px 50px;
+    background-repeat: no-repeat;
+    image-orientation: inherit;
+    height: 260px;
+    border: 10px solid chartreuse;
+    animation-name: rotate;
+    animation-duration: 100s;
+}
+
+section:nth-of-type(4){
+    grid-area: e;
+    background-image: url(./connect.jpeg);
+    border-radius: 40px 50px;
+}
+
+section>input{
+    background-color: rgb(0, 255, 213);
+    width: 200px;
+    height: 40px;
+    border-radius: 10px 40px 40px;
+    margin-top: 270px;
+    color: cornflowerblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+
+section:nth-of-type(5){
+    grid-area: c;
+    background-color: orange;
+    border-radius: 50px;
+    height: 230px;
+    text-align: center;
+    margin-block: auto;
+    font-size: xx-large;
+}
+
+section:nth-of-type(5)>input{
+    background-color: orange;
+    margin-top:10px;
+    border-radius: 40px 50px;
+    color: whitesmoke;
+}
+
+#preloader{
+    background: #000 url(./check-loader-gif.gif) no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+#handwaving{
+    background: white url(./gif\ handwaving.gif) no-repeat center center;
+    background-size: 15%;
+}
+
+img{
+    width: 70px;
+    border-radius: 50px;
+    margin-left: 70%;
+}
+
+@keyframes rotate{
+    100%{transform: rotateZ(360deg);}
+}
